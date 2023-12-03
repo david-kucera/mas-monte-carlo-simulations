@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="OSPRNG">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/Generator/OSPRNG.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
