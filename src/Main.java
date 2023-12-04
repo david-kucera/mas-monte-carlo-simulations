@@ -3,6 +3,7 @@ public class Main {
 //        Cv08_Predajna_Suvenirov.spusti();
 //        Zadanie09_Cestovatel.spusti();
 //        Zadanie08_Kombajny.spusti();
-        Zadanie07_Farmaceuti.spusti();
+//        Zadanie07_Farmaceuti.spusti();
+        Zadanie06_Zavodnici.spusti();
     }
 }
