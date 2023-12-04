@@ -1,7 +1,5 @@
 import OSPRNG.TriangularRNG;
 
-import java.util.ArrayList;
-
 public class Zadanie07_Farmaceuti {
 
     public static void spusti() {
@@ -10,27 +8,22 @@ public class Zadanie07_Farmaceuti {
         int pocetReplikacii = 10000;
         double[] dodatocneNakladyList = new double[4000];
         int[] pocetVakcinNaSkladeList = new int[4000];
+        for (int i = 0; i < 4000; i++) {
+            pocetVakcinNaSkladeList[i] = 4500 + i;
+        }
 
         for (int i = 0; i < pocetReplikacii; i++) {
-            int sucasnost = 4500;
 
             for (int navysenie = 0; navysenie < 4000; navysenie++) {
-                sucasnost += navysenie;
+                int sucasnost = 4500 + navysenie;
                 double dodatocneNaklady = 0;
                 double dopyt = triangularRNG.sample();
 
-                if (dopyt == sucasnost) {
-                    dodatocneNaklady += 0;
-                }
-                if (dopyt > sucasnost) {
-                    dodatocneNaklady += (dopyt - sucasnost) * 150;
-                }
-                if (dopyt < sucasnost) {
-                    dodatocneNaklady += (sucasnost - dopyt) * 50;
-                }
+                if (dopyt == sucasnost) { dodatocneNaklady += 0; }
+                if (dopyt > sucasnost) { dodatocneNaklady += (dopyt - sucasnost) * 150; }
+                if (dopyt < sucasnost) { dodatocneNaklady += (sucasnost - dopyt) * 50; }
 
                 dodatocneNakladyList[navysenie] += dodatocneNaklady;
-                pocetVakcinNaSkladeList[navysenie] = sucasnost;
             }
         }
 
@@ -38,7 +31,6 @@ public class Zadanie07_Farmaceuti {
             dodatocneNakladyList[i] = dodatocneNakladyList[i]/pocetReplikacii;
         }
 
-        // find min
         double minimum = Double.MAX_VALUE;
         int indexMin = -1;
         for (int i = 0; i < dodatocneNakladyList.length; i++) {
