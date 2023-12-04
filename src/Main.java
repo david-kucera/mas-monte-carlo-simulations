@@ -4,6 +4,7 @@ public class Main {
 //        Zadanie09_Cestovatel.spusti();
 //        Zadanie08_Kombajny.spusti();
 //        Zadanie07_Farmaceuti.spusti();
-        Zadanie06_Zavodnici.spusti();
+//        Zadanie06_Zavodnici.spusti();
+        Zadanie05_Vestice.spusti();
     }
 }
