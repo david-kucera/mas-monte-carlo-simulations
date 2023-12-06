@@ -5,6 +5,7 @@ public class Main {
 //        Zadanie08_Kombajny.spusti();
 //        Zadanie07_Farmaceuti.spusti();
 //        Zadanie06_Zavodnici.spusti();
-        Zadanie05_Vestice.spusti();
+//        Zadanie05_Vestice.spusti();
+        Zadanie04_Namornik.spusti();
     }
 }
