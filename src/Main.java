@@ -6,6 +6,7 @@ public class Main {
 //        Zadanie07_Farmaceuti.spusti();
 //        Zadanie06_Zavodnici.spusti();
 //        Zadanie05_Vestice.spusti();
-        Zadanie04_Namornik.spusti();
+//        Zadanie04_Namornik.spusti();
+        Zadanie03_OdhadPi.spusti();
     }
 }
