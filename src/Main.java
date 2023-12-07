@@ -7,6 +7,7 @@ public class Main {
 //        Zadanie06_Zavodnici.spusti();
 //        Zadanie05_Vestice.spusti();
 //        Zadanie04_Namornik.spusti();
-        Zadanie03_OdhadPi.spusti();
+//        Zadanie03_OdhadPi.spusti();
+        Zadanie02_Jarmok.spusti();
     }
 }
