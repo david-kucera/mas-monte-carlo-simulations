@@ -14,12 +14,17 @@ public class Test3_Medovniky {
         for (int i = 0; i < pocetReplikacii; i++) {
             double pocetMinutOtvoreneZotavajuce = 8 * 60;
             double dnesnaCena = cenaRNG.sample();
+            boolean zlavnene = false;
             double zarobila = 0.0;
             int pocetMedovnikov = 100;
 
             while (pocetMinutOtvoreneZotavajuce > 0.0) {
 
-                if (pocetMinutOtvoreneZotavajuce <= 60 && pocetMedovnikov > 10) {
+                if (pocetMinutOtvoreneZotavajuce <= 60 && pocetMedovnikov > 10 && !zlavnene) {
+                    zlavnene = true;
+                }
+
+                if (zlavnene) {
                     double prichodNavstevnika = zlavRNG.sample();
                     pocetMinutOtvoreneZotavajuce -= prichodNavstevnika;
 
@@ -46,6 +51,6 @@ public class Test3_Medovniky {
         }
 
         System.out.println("Babka zarobila priemerne za den: " + zarobilaCelkovo/pocetReplikacii + " EUR.");
-        System.out.println("Babke ostalo priemerne za den: " + ostaloCelkovo/pocetReplikacii + " medovnikov.");
+        System.out.println("Babke ostalo priemerne za den: " + (double)ostaloCelkovo/pocetReplikacii + " medovnikov.");
     }
 }
