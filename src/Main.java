@@ -9,6 +9,7 @@ public class Main {
 //        Zadanie04_Namornik.spusti();
 //        Zadanie03_OdhadPi.spusti();
 //        Zadanie02_Jarmok.spusti();
-        Zadanie01_Tlac.spusti();
+//        Zadanie01_Tlac.spusti();
+        Test3_Medovniky.spusti();
     }
 }
