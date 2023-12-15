@@ -84,25 +84,18 @@ public class Zadanie06_Zavodnici {
 class Vysledok implements Comparable<Vysledok> {
     private Typ typ;
     private Double cas;
-    private int body;
 
     public Vysledok(Typ typ, double cas) {
         this.cas = cas;
         this.typ = typ;
-        this.body = 0;
     }
 
     public Typ getTyp() {
         return this.typ;
     }
 
-    public int getBody() {
-        return this.body;
-    }
-
     @Override
     public int compareTo(Vysledok other) {
-        // Compare based on the cas values
         return this.cas.compareTo(other.cas);
     }
 }
