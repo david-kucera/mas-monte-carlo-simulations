@@ -12,6 +12,6 @@ public class Main {
 //        Zadanie01_Tlac.spusti();
 //        Test3_Medovniky.spusti();
 //        Test3_Triatlon.spusti();
-
+        Test3_Burza.spusti();
     }
 }
