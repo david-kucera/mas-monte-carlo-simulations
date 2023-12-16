@@ -14,7 +14,6 @@ public class Test3_Zalubenci {
 
         int POCET_REPLIKACII = 1000000;
         int stretliSa = 0;
-        int nestretliSa = 0;
         for (int i = 0; i < POCET_REPLIKACII; i++) {
             double prichodRomea = casRomeo.sample();
             double prichodJulie = casJulia.sample();
@@ -26,7 +25,6 @@ public class Test3_Zalubenci {
             double odchodJulie = prichodJulie + casJulie;
 
             if (pestunka.sample() <= 0.04) {
-                nestretliSa++;
                 continue;
             }
 
@@ -36,8 +34,6 @@ public class Test3_Zalubenci {
             else if (prichodJulie < prichodRomea && prichodRomea < odchodJulie) {
                 stretliSa++;
             }
-
-            nestretliSa++;
         }
         System.out.println("Pravdepodobnost, ze sa zalubenci stretnu je: " + (((double)stretliSa/POCET_REPLIKACII) * 100));
     }
