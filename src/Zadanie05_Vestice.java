@@ -1,4 +1,4 @@
-import java.util.Random;
+import OSPRNG.UniformContinuousRNG;
 
 public class Zadanie05_Vestice {
     public static void spusti() {
@@ -31,12 +31,12 @@ public class Zadanie05_Vestice {
     }
 
     private static boolean dajOtazku() {
-        Random rnd = new Random();
-        return rnd.nextDouble() <= 0.5;
+        UniformContinuousRNG random = new UniformContinuousRNG();
+        return random.sample() <= 0.5;
     }
 
     private static boolean dajOdpoved() {
-        Random random = new Random();
-        return random.nextDouble() <= 0.8;
+        UniformContinuousRNG random = new UniformContinuousRNG();
+        return random.sample() <= 0.8;
     }
 }
