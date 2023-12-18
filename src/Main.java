@@ -14,6 +14,7 @@ public class Main {
 //        Test3_Triatlon.spusti();
 //        Test3_Burza.spusti();
 //        Test3_Fondy.spusti();
-        Test3_Zalubenci.spusti();
+//        Test3_Zalubenci.spusti();
+        Test3_GalPo13.spusti();
     }
 }
