@@ -2,14 +2,12 @@ import OSPRNG.TriangularRNG;
 
 public class Zadanie08_Kombajny {
     public static void spusti() {
-        int pocetKombajnov = 1; // Zaciname s 1 kombajnom
+        int pocetKombajnov = 1;
         double pravdepodobnost;
 
         // Opakujuci sa cyklus az kym sa nenajde pozadovany pocet kombajnov
         do {
             pravdepodobnost = simuluj(pocetKombajnov);
-//            System.out.println("Pocet kombajnov: " + pocetKombajnov);
-//            System.out.println("Pravdepodobnost: " + pravdepodobnost);
 
             // Dosiahli sme pozadovanu pravdepodobnost, koniec
             if (pravdepodobnost > 0.90) {
@@ -48,7 +46,7 @@ public class Zadanie08_Kombajny {
             }
         }
 
-        return vypocitajPravdepodobnost(stihli/pocetReplikacii, nestihli/pocetReplikacii);
+        return vypocitajPravdepodobnost(stihli / pocetReplikacii, nestihli / pocetReplikacii);
     }
 
     private static double vypocitajPravdepodobnost(int pocetStihli, int pocetNestihli) {

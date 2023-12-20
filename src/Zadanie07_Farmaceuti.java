@@ -13,12 +13,11 @@ public class Zadanie07_Farmaceuti {
         }
 
         for (int i = 0; i < pocetReplikacii; i++) {
-
             for (int navysenie = 0; navysenie < 4000; navysenie++) {
                 int sucasnost = 4500 + navysenie;
                 double dodatocneNaklady = 0;
-                double dopyt = triangularRNG.sample();
 
+                double dopyt = triangularRNG.sample();
                 if (dopyt == sucasnost) { dodatocneNaklady += 0; }
                 if (dopyt > sucasnost) { dodatocneNaklady += (dopyt - sucasnost) * 150; }
                 if (dopyt < sucasnost) { dodatocneNaklady += (sucasnost - dopyt) * 50; }
@@ -28,7 +27,7 @@ public class Zadanie07_Farmaceuti {
         }
 
         for (int i = 0; i < dodatocneNakladyList.length; i++) {
-            dodatocneNakladyList[i] = dodatocneNakladyList[i]/pocetReplikacii;
+            dodatocneNakladyList[i] = dodatocneNakladyList[i] / pocetReplikacii;
         }
 
         double minimum = Double.MAX_VALUE;

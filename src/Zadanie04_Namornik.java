@@ -8,9 +8,12 @@ public class Zadanie04_Namornik {
     }
 
     private static void cast3() {
+        UniformDiscreteRNG dsc = new UniformDiscreteRNG(0, 5);
         int pocetRep = 100000;
         int pocetKrokov = 1000;
-        UniformDiscreteRNG dsc = new UniformDiscreteRNG(0, 5);
+        double teor = Math.sqrt((6 * pocetKrokov)/Math.PI);
+        System.out.println("Teoreticky odhad vysledku: " + Math.round(teor));
+
         int celkovo = 0;
         for (int i = 0; i < pocetRep; i++) {
             int[] startBod = {0, 0, 0};
@@ -41,15 +44,16 @@ public class Zadanie04_Namornik {
             celkovo += Math.abs(startBod[1]);
             celkovo += Math.abs(startBod[2]);
         }
-        System.out.println("Vysledok tretej casti prikladu: " + celkovo/pocetRep);
-        //double teor = Math.sqrt((6 * pocetKrokov)/Math.PI);
-        //System.out.println("Teoreticky odhad vysledku: " + Math.round(teor));
+        System.out.println("Vysledok tretej casti prikladu: " + Math.round((double)celkovo / pocetRep));
     }
 
     private static void cast2() {
+        UniformDiscreteRNG dsc = new UniformDiscreteRNG(0, 1);
         int pocetRep = 100000;
         int pocetKrokov = 1000;
-        UniformDiscreteRNG dsc = new UniformDiscreteRNG(0, 1);
+        double teor = Math.sqrt((4 * pocetKrokov)/Math.PI);
+        System.out.println("Teoreticky odhad vysledku: " + Math.round(teor));
+
         int celkovo = 0;
         for (int i = 0; i < pocetRep; i++) {
             int[] startBod = {0, 0};
@@ -71,15 +75,16 @@ public class Zadanie04_Namornik {
             celkovo += Math.abs(startBod[0]);
             celkovo += Math.abs(startBod[1]);
         }
-        System.out.println("Vysledok druhej casti prikladu: " + celkovo/pocetRep);
-        //double teor = Math.sqrt((4 * pocetKrokov)/Math.PI);
-        //System.out.println("Teoreticky odhad vysledku: " + Math.round(teor));
+        System.out.println("Vysledok druhej casti prikladu: " + Math.round((double)celkovo / pocetRep));
     }
 
     private static void cast1() {
+        UniformDiscreteRNG dsc = new UniformDiscreteRNG(0, 1);
         int pocetRep = 100000;
         int pocetKrokov = 1000;
-        UniformDiscreteRNG dsc = new UniformDiscreteRNG(0, 1);
+        double teor = Math.sqrt((2 * pocetKrokov)/Math.PI);
+        System.out.println("Teoreticky odhad vysledku: " + Math.round(teor));
+
         int celkovo = 0;
         for (int i = 0; i < pocetRep; i++) {
             int startBod = 0;
@@ -93,8 +98,6 @@ public class Zadanie04_Namornik {
             }
             celkovo += Math.abs(startBod);
         }
-        System.out.println("Vysledok prvej casti prikladu: " + celkovo/pocetRep);
-        //double teor = Math.sqrt((2 * pocetKrokov)/Math.PI);
-        //System.out.println("Teoreticky odhad vysledku: " + Math.round(teor));
+        System.out.println("Vysledok prvej casti prikladu: " + Math.round((double)celkovo / pocetRep));
     }
 }

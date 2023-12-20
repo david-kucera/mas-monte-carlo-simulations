@@ -29,7 +29,7 @@ public class Zadanie02_Jarmok {
             celkA += cenaA * predanychA - naklA;
             celkB += cenaB * predanychB - naklB;
         }
-        System.out.println("Celkovy zisk z predaja produktov A: " + (celkA/pocetRep));
-        System.out.println("Celkovy zisk z predaja produktov B: " + (celkB/pocetRep));
+        System.out.println("Celkovy zisk z predaja produktov A: " + (celkA / pocetRep));
+        System.out.println("Celkovy zisk z predaja produktov B: " + (celkB / pocetRep));
     }
 }

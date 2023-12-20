@@ -10,7 +10,7 @@ public class Zadanie01_Tlac {
         int pocetRep = 1000000;
         double maxZisk = 0.0;
         int maxBaliky = 0;
-        for (int i = 10; i <= 20; i++) {
+        for (int i = 0; i <= 50; i++) {
             double celkovyZisk = 0.0;
 
             for (int j = 0; j < pocetRep; j++) {
