@@ -5,7 +5,7 @@ public class Main {
 //        Zadanie08_Kombajny.spusti();
 //        Zadanie07_Farmaceuti.spusti();
 //        Zadanie06_Zavodnici.spusti();
-        Zadanie05_Vestice.spusti();
+//        Zadanie05_Vestice.spusti();
 //        Zadanie04_Namornik.spusti();
 //        Zadanie03_OdhadPi.spusti();
 //        Zadanie02_Jarmok.spusti();
@@ -17,5 +17,6 @@ public class Main {
 //        Test3_Zalubenci.spusti();
 //        Test3_GalPo13.spusti();
 //        Test3_GalPo15.spusti();
+        Test3_JanSt14.spusti();
     }
 }
