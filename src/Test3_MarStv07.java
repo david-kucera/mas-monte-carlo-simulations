@@ -35,7 +35,7 @@ public class Test3_MarStv07 {
                 boolean trafilDruhy = trafil(zasahDruhy);
                 boolean trafilTreti = trafil(zasahTreti);
 
-                if (trafilPrvy == trafilDruhy == trafilTreti) {
+                if (trafilPrvy && trafilDruhy && trafilTreti) {
                     vsetciTrafili++;
                 }
 
